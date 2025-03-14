@@ -1,0 +1,94 @@
+@use '@/public/assets/scss/variables/index' as *;
+
+.categories{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .layout{
+        @include flex-container;
+    }
+    .container{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        .sidebarContainer{
+            flex:1;
+            background-color: coral;
+        }
+        .content{
+            padding:0 0 0 40px;
+            flex:2;
+            color: black;
+            font-size: $font-xl;
+            font-weight: 700;
+            table {
+                max-width: 1000px;
+                width: 100%;
+                margin-right: auto;
+                width: 100%;
+                border: 3px solid coral;
+                flex: 2;
+                height: fit-content;
+        
+                thead {
+                    tr {
+                        background-color: coral;
+        
+                        th {
+                            text-align: start;
+                            padding-left: 10px;
+                            padding: 10px 0 10px 10px;
+                            color: white;
+                            font-family: Outfit;
+                            font-weight: 700;
+                            font-size: $font-xl;
+                            text-align: center;
+                        }
+                    }
+                }
+        
+                tbody {
+                    tr {
+                        &:nth-child(even) {
+                            background-color: rgba(255, 127, 80, 0.8);
+                        }
+        
+                        &:nth-child(odd) {
+                            background-color: rgba(255, 127, 80, 0.4);
+                        }
+        
+                        td {
+                            padding: 10px;
+                            color: black;
+                            font-family: Outfit;
+                            font-weight: 400;
+                            font-size: $font-lg;
+                            vertical-align: middle;
+                            text-align: center;
+        
+                        }
+                        .manageUser {
+                            .bin{
+                                padding:5px 7px;
+                                background-color: red;
+                                border-radius: 5px;
+                                width: fit-content;
+                                justify-self: center;
+                                cursor: pointer;
+                                overflow: hidden;
+                                &:hover{
+                                    img{
+                                        transform: scale(1.1);
+                                    }
+                                }
+                                img{
+                                    transition: all .3s;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -16,7 +16,6 @@ const PostAnnouncementForm = ({ categories }) => {
     const handleChange = (e) => {
         
         const { name, value, files } = e.target;
-        console.log(value);
         if (name === 'image' && files) {
             setFormData((prevData) => ({
                 ...prevData,
@@ -40,7 +39,6 @@ const PostAnnouncementForm = ({ categories }) => {
 
         const handleSubmit = async (e) => {
             e.preventDefault();
-            console.log(formData)
 
             const isFormValid = 
                 formData.title &&

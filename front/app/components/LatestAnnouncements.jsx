@@ -6,7 +6,6 @@ const LatestAnnouncements = ({ data }) => {
     return (
         <section className={styles.latestAnnouncements}>
             {data && data.map((announcement, index) => {
-                console.log(announcement);
                 return (
                     <Link href="/" key={index} className={styles.container}>
                         <div className={styles.imageContainer}>

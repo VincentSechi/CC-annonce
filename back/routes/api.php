@@ -13,6 +13,7 @@ use App\Http\Controllers\CategoryController;
 
 Route::get('/annonces', [AnnonceController::class, 'index']);
 Route::get('/annonces/{id}', [AnnonceController::class, 'show']);
+
 Route::middleware('auth:sanctum')->group(function () {
     Route::post('/annonces', [AnnonceController::class, 'store']);
     Route::put('/annonces/{id}', [AnnonceController::class, 'update']);
@@ -22,7 +23,8 @@ Route::middleware('auth:sanctum')->group(function () {
 // CATEGORIES
 
 Route::get('/categories', [CategoryController::class, 'index']);
-Route::middleware(['auth:sanctum', 'role:admin'])->group(function () {
+
+Route::middleware('auth:sanctum')->group(function () {
     Route::post('/categories', [CategoryController::class, 'store']);
     Route::put('/categories/{id}', [CategoryController::class, 'update']);
     Route::delete('/categories/{id}', [CategoryController::class, 'destroy']);

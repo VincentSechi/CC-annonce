@@ -6,7 +6,6 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Annonce;
 use App\Models\Category;
-use Faker\Factory as Faker;
 
 class AnnouncementSeeder extends Seeder
 {
