@@ -1,0 +1,5 @@
+@use '@/public/assets/scss/variables/index' as *;
+
+.home{
+    @include flex-container;
+}

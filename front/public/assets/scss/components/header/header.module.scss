@@ -1,0 +1,40 @@
+@use '@/public/assets/scss/variables/index' as *;
+
+.header{
+    width: 100%;
+    background-color: coral;
+    position: sticky;
+    top:0;
+    .nav{
+        width: 100%;
+        .navContainer{
+            @include flex-container;
+            justify-content: space-between;
+            padding:20px 10px;
+            .homeLogo{
+                color:white;
+            }
+            .navLinks{
+                display: flex;
+                gap:20px;
+                .navLink{
+                    a{
+                        background-color: white;
+                        padding:10px 20px;
+                        font-family: Outfit;
+                        color: coral;
+                        border-radius: 10px;
+                        transition: all .3s;
+                        border: 1px solid white;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        &:hover{
+                            background-color: coral;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

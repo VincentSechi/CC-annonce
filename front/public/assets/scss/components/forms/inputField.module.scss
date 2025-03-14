@@ -1,0 +1,29 @@
+@use '@/public/assets/scss/variables/index' as *;
+.inputField{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    width: 100%;
+    .label{
+        font-size: $font-lg;
+        color: coral;
+        font-weight: 700;
+    }
+    input{
+        color:black;
+        padding:0 20px 5px 20px;
+        border-bottom: 2px solid rgba(255, 127, 80, 0.5);
+        font-size: $font-sm;
+        caret-color: black;
+    }
+    select{
+        border: 2px solid rgba(255, 127, 80, 0.5);
+        height: 100%;
+        padding: 0 20px 0 10px;
+        border-radius: 5px;
+
+        -moz-appearance:none; /* Firefox */
+        -webkit-appearance:none; /* Safari and Chrome */
+        appearance:none;
+    }
+}

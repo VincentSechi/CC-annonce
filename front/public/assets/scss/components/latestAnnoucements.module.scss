@@ -1,0 +1,33 @@
+@use '@/public/assets/scss/variables/index' as *;
+
+.latestAnnouncements{
+    display: flex;
+    gap:50px;
+    .container{
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        width: 100%;
+        background: rgb(182, 182, 182);
+        .imageContainer{
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            height: 200px;
+            display: flex;
+            &:hover{
+                img{
+                    transform: scale(1.1);
+                }
+            }
+            img{
+                margin:0 auto;
+                transition: all .3s;
+                object-fit: contain;
+            }
+        }
+        .heading{
+
+        }
+    }
+}

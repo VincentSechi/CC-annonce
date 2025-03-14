@@ -1,0 +1,11 @@
+@use '@/public/assets/scss/variables/index' as *;
+
+.globalHeading{
+    margin:40px 0;
+    h1{
+        color: coral;
+        font-size: $font-h1;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}

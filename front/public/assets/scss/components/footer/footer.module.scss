@@ -1,0 +1,13 @@
+@use '@/public/assets/scss/variables/index' as *;
+
+.footer{
+    width: 100%;
+    background-color: black;
+    margin-top:auto;
+    .footerContainer{
+        @include flex-container;
+        justify-content: space-between;
+        padding:20px 10px;
+        color:white;
+    }
+}
